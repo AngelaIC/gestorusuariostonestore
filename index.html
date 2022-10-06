@@ -9,13 +9,49 @@
 </head>
 <body>
     <main>
+        <!-- Registro Stone Store -->
         <form action="" class="registro" id="registro">
-            <div for="registro__usuarios"  id="usuarios__usuario">
-                <label for="usuario" class="registro__label"> Usuario </label>
-                <div class="registro__usuarios-input">
-                    <input type="text" class="registro__input" name="usuario" id="usuario" placeholder="Usuario">
+
+            <!-- Registro = Correo electrónico // Email -->
+            <div for="registro__usuarios"  id="usuarios__correo">
+                <label for="correo" class="registro__label"> Correo electrónico</label>
+                <div class="registro__correos-input">
+                    <input type="email" class="registro__input" name="correo" id="correo" placeholder="Correo electrónico">
                 </div>
-                <p class="registro__input-error"> Usuario no válido, por favor intente nuevamente con uno nuevo </p>
+                <p class="registro__input-error"> El correo no debe contener carácteres especiales, por favor intente nuevamente con uno nuevo </p>
+            </div>
+
+            <!-- Registro = Identificación -->
+            <div for="registro__usuarios"  id="usuarios__identificación">
+                <label for="identificacion" class="registro__label"> Identificación </label>
+                <div class="registro__identificaciones-input">
+                    <input type="text" class="identificacion__input" name="identificacion" id="identificacin" placeholder="Identificación">
+                </div>
+                <p class="registro__input-error"> Identificación no válida, por favor intente nuevamente sin puntos ni comas </p>
+            </div>
+
+            <!-- Registro = Nombre -->
+            <div for="registro__usuarios"  id="usuarios__nombre">
+                <label for="nombre" class="registro__label"> Nombre Completo </label>
+                <div class="registro__nombres-input">
+                    <input type="text" class="registro__input" name="nombre" id="nombre" placeholder="Nombre Completo">
+                </div>
+                <p class="registro__input-error"> Nombre no válido, por favor intente nuevamente sin agregar carácteres especiales </p>
+            </div>
+
+            <!-- Registro = Contraseña // password -->
+            <div for="registro__usuarios"  id="usuarios__password">
+                <label for="password" class="registro__label"> Contraseña </label>
+                <div class="registro__usuarios-input">
+                    <input type="password" class="registro__input" name="password" id="password" placeholder="Contraseña">
+                </div>
+                <p class="registro__input-error"> Contraseña no válida, por favor intente nuevamente, recuerde incluir una letra mayúscula,almenos un número y un carácter especial  </p>
+            </div>
+
+            <!-- Registro = Btn-->
+
+            <div class="registro__usuarios  reg__us-btn-registrar">
+                <button type="submit" class="registro__btn"> Registrar Usuario </button>
             </div>
         </form>
     </main>

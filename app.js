@@ -11,6 +11,32 @@ const exp ={
    nombre: /^[a-zA-ZÁ-ÿ\s]{1,40}$/,
    password: /^.{4,12}$/,
 }
+//Vamos a validar los input para que se reconozcan los datos
+//Ejemplo: Angela = nombre
+//Cambio de color azul = correcto o rojo = incorrecto
+const validarRegistro = (e) => {
+    switch(e.target.name){
+        case "correo":
+            if(exp.registro.test(e.target.value)){
+            }else{
+                document.getElementById("usuarios__correo")
+            }
+        break;
+        case "ID":
+        break;
+        case "nombre":
+        break;
+        case "password":
+        break;
+    }
+}
+
+//Damos funcionalidad a los input con función tipo flecha
+datos.forEach((input) => {
+    //Usamos keyup para que al soltar la tecla nos ejecute una función
+    input.addEventListener("keyup", validarRegistro);
+    input.addEventListener("blur", validarRegistro);
+});
 
 //Damos funcionalidad al registro mediante una función flecha
 //Mediante php lo podemos enviar a otra página
@@ -20,6 +46,5 @@ const exp ={
 registro.addEventListener("submit", (e) => {
     //Evitamos enviar los datos temporalmente para probar funcionalidad deñ registro
     e.preventDefault();
-
 });
 

@@ -14,7 +14,7 @@
 
             <!-- Registro = Correo electrónico // Email -->
             <div for="registro__usuarios"  id="usuarios__correo">
-                <label for="correo" class="registro__label"> Correo electrónico</label>
+                <label for="correo" class="registro__label"> Correo electrónico </label>
                 <div class="registro__correos-input">
                     <input type="email" class="registro__input" name="correo" id="correo" placeholder="usuario@StoneStore.com">
                 </div>
@@ -46,6 +46,26 @@
                     <input type="password" class="registro__input" name="password" id="password" placeholder="*****">
                 </div>
                 <p class="registro__input-error"> Contraseña no válida, por favor intente nuevamente, recuerde incluir una letra mayúscula,almenos un número y un carácter especial  </p>
+            </div>
+            <!-- Registro = Rol -->
+            <div for="registro__usuarios"  id="usuarios__rol">
+                <label for="rol" class="registro__label"> Rol Usuario </label>
+                <div class="registro__usuarios-input">
+                    <input type="text" class="registro__input" name="rol" id="rol">
+                </div>
+            </div>
+
+            <!-- Registro = Términos y condiciones -->
+            <div class="registro__usuarios" id="usuarios__terycon">
+                <label class="registro__label">
+                    <input class="registro__checkbox" type="checkbox" name="terycon" id="terycon">
+                    Al registrarse en nuestra página Web acepta Términos y Condiciones del lugar.
+                </label>
+            </div>
+            
+            <!-- Registro = Estado pendiente -->
+            <div class="registro__mensaje" id="registro__mensaje" >
+                <p><b>Estimado usuario: </b> El estado de su solicitud es <b>"Pendiente"</b></p>
             </div>
 
             <!-- Registro = Btn-->

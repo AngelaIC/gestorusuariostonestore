@@ -1,6 +1,22 @@
 *{
     box-sizing: border-box;
 }
+header{
+background: white;
+margin: 0px;
+height: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 100px;px;
+}
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: linear-gradient(white,rgb(15, 18, 19));
